@@ -1,0 +1,14 @@
+<%= stylesheet_link_tag 'session', media: 'all', 'data-turbolinks-track': 'reload' %>
+<h1><%= t :authorization %></h1>
+
+<div class="form">  
+    <%= form_with url: session_create_url, method: :post, local: true do |f| %>
+        <%= f.label t(:login) %>
+        <%= f.text_field :login, required: true, label: t(:login) %>
+        <%= f.label t(:password) %>
+        <%= f.password_field :password, required: true, label: t(:password) %>
+        <%= f.submit t(:log_in)%>
+    <% end %>
+</div>
+
+<%= link_to I18n.t(:registration), new_user_path %>

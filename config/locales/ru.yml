@@ -1,0 +1,32 @@
+ru:
+  registration: "Зарегистрироваться"
+  authorization: "Вход"
+  password: "Пароль"
+  login: "Логин"
+  log_in: "Войти"
+
+  back: "Назад"
+  new_user: "Регистрация"
+
+  password_confirmation: "Подтверждение пароля"
+  create_user: "Зарегистрироваться"
+
+  wrong_login_or_password: "Неверный логин или пароль"
+
+  error: "ошибка(-и)"
+  prohibited_this_user_from_being_saved: "создания пользователя"
+
+  сlick_the_P_to_get_started: "Нажмите Р чтобы начать игру"
+  unstructions: "Инструкция"
+  press_p_to_pause_or_ESC_to_abandon_game: "Нажмите [p] чтобы поставить на паузу или [ESC] чтобы завершить игру."
+  Flip_is_a_timed_card_memory_game__Click_the_green_cards_to_see: "FLIP это карточная игра на память. Нажимайте на зеленые карточки, чтобы увидеть"
+  what_symbol_they_uncover_and_try_to_find_the_matching_symbol_underneath: "какой символ они открывают, и попытайтесь найти соответсвующий символ"
+  the_other_cards: "под оставшимися карточками."
+  Uncover_two_matching_symbols_at_once_to_eliminate_them_from_the_game: "Переверните две карточки с одинаковыми символами одновременно, чтобы удалить их игры."
+  Eliminate_all_cards_as_fast_as_you_can_to_win_the_game__Have_fun_FLIPing: "Удалите все карточки как можно быстрее, чтобы выиграть. Веселитесь с FLIP!"
+  casual: "Простой"
+  medium: "Средний"
+  hard: "Сложный"
+  figures: "Цифры"
+  play_now: "Играть"
+  log_out: "Выйти"

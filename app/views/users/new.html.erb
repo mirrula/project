@@ -1,0 +1,9 @@
+<%= stylesheet_link_tag 'users', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<h1><%= I18n.t :new_user %></h1>
+
+<div class="form">  
+    <%= render 'form', user: @user %>
+</div>
+
+<%= link_to t(:back), session_login_url %>

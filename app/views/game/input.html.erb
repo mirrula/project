@@ -1,0 +1,56 @@
+    <%= stylesheet_link_tag 'game', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'game', 'data-turbolinks-track': 'reload' %>
+
+<div id="g"></div>
+	
+<div class="logo">
+  <p class="info"><%= I18n.t :сlick_the_P_to_get_started %></p>
+  <div class="card left">
+    <div class="flipper">
+      <div class="f c1">F</div>
+      <div class="b contentbox" id="stats">
+        <div class="padded">
+          <h2><%= t :figures %></h2>
+          Looks like you haven't FLIPped yet.
+          <a href="javascript:;" class="playnow"><%= t :play_now %></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card active twist">
+    <div class="flipper">
+      <div class="b f">
+        <div class="c2">L</div>
+      </div>
+    </div>
+  </div>
+  <div class="card left">
+    <div class="flipper">
+      <div class="f c3">I</div>
+      <div class="b contentbox instructions">
+        <div class="padded">
+          <h2><%= t :unstructions %></h2>
+          <p><%= t :press_p_to_pause_or_ESC_to_abandon_game %></p>
+          <p><%= t :Flip_is_a_timed_card_memory_game__Click_the_green_cards_to_see %>
+             <%= t :what_symbol_they_uncover_and_try_to_find_the_matching_symbol_underneath %>
+             <%= t :the_other_cards %></p>
+          <p><%= t :Uncover_two_matching_symbols_at_once_to_eliminate_them_from_the_game %></p>
+          <p><%= t :Eliminate_all_cards_as_fast_as_you_can_to_win_the_game__Have_fun_FLIPing %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="flipper">
+      <div class="f c4">P</div>
+      <div class="b contentbox levels">
+        <a href="javascript:;" data-level="8" class="play"><%= t :casual %></a>
+        <a href="javascript:;" data-level="18" class="play"><%= t :medium %></a>
+        <a href="javascript:;" data-level="32" class="play"><%= t :hard %></a>
+      </div>
+    </div>
+  </div>
+
+  <%= link_to I18n.t(:log_out), session_logout_path %>
+
+</div>

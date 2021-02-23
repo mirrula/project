@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<%= stylesheet_link_tag 'session', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<form class="decor">
+  <div class="form-left-decoration"></div>
+  <div class="form-right-decoration"></div>
+  <div class="circle"></div>
+
+  <div class="form-inner">
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @user.password_digest %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @user.score %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+  </div>
+</form>
